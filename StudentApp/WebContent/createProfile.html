@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CreateProfile</title>
+</head>
+<style type="text/css">
+ 
+ body
+ {
+ background: #ccc;
+ }  
+fieldset
+{
+   width: 50%;
+   margin:50px auto auto;
+   padding:25px 75px;
+   font:bold 13px arial;
+   background:#f8f8ff;
+}
+
+legend
+{
+color:#8b3a3a;
+font: 25px calibri;
+}
+h3
+{
+font:bold 16px arial;
+text-decoration:underline;
+color:#a52a2a;
+background:
+}
+td
+{
+font:14px arial;
+color:#333;
+}
+h2
+{
+font:18px arial;
+}
+
+
+
+</style>
+<body>
+   
+  
+    <fieldset>
+      <legend>Student Profile Form</legend>
+      <table>
+      <form action="./create" method="post">
+        <h3>Enter the Student Details :</h3>
+        <tr><td>Register No. :</td><td><input type="text" name="regno"></td></tr>
+        <tr><td>First Name :</td><td><input type="text" name="fname"></td></tr>
+        <tr><td>Middle Name :</td><td><input type="text" name="mname"></td></tr>
+        <tr><td>Last Name :</td><td><input type="text" name="lname"></td></tr>
+        <tr></tr>
+        <tr><td><h3>Enter the Guardian Details :</h3></td></tr>
+        <tr><td>First Name :</td><td><input type="text" name="gfname"></td></tr>
+        <tr><td>Middle Name :</td><td><input type="text" name="gmname"></td></tr>  
+        <tr><td>Last Name :</td><td><input type="text" name="glname"></td></tr>
+        <tr></tr>
+        <tr><td><h3>Enter Other Details :</h3></td></tr>
+        <tr><td>Is_Admin :</td><td><select name="isAdmin">
+                  <option>Select</option>    
+                  <option>Y</option>
+                  <option>N</option>
+                </select>
+              </td>
+         </tr>
+         <tr><td>Password :</td><td><input type="password" name="password"></td> </tr>
+         <tr></tr>
+         <tr><td><input type="Submit" value="Save"></td><td><input type="reset" value="Reset"></td></tr>           
+      
+      </table>
+      </form>
+      
+    
+    
+    </fieldset>
+
+
+</body>
+</html>

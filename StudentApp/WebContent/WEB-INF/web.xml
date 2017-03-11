@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>StudentApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+     <servlet-name>login</servlet-name>
+     <servlet-class>com.studentapp.LogIn</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>login</servlet-name>
+     <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>homepage</servlet-name>
+    <servlet-class>com.studentapp.HomePageServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>homepage</servlet-name>
+    <url-pattern>/homepage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>alldata</servlet-name>
+     <servlet-class>com.studentapp.AllData</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>alldata</servlet-name>
+    <url-pattern>/alldata</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>edit</servlet-name>
+   <servlet-class>com.studentapp.Edit</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>edit</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>update</servlet-name>
+     <servlet-class>com.studentapp.Update</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>create</servlet-name>
+     <servlet-class>com.studentapp.CreateProfile</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>create</servlet-name>
+    <url-pattern>/create</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>search</servlet-name>
+     <servlet-class>com.studentapp.SearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>delete</servlet-name>
+     <servlet-class>com.studentapp.Delete</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>changepass</servlet-name>
+     <servlet-class>com.studentapp.Change_Password</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>changepass</servlet-name>
+    <url-pattern>/changepass</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>logout</servlet-name>
+     <servlet-class>com.studentapp.Logout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+  
+  <session-timeout>1</session-timeout>
+  </session-config>
+  
+</web-app>
