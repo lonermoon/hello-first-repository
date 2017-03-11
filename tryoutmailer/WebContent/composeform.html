@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Compose Mail</title>
+</head>
+<style type="text/css">
+.inputform{border:0.5px solid #6495ed;;width:425px;height:auto;border-radius:5px;}
+.design{background:#6495ed;width:90%;text-align:center;color:white;margin:10px 23px;font:700 18px arial;}
+#submit{margin-right:15px;margin-top:15px;margin-bottom:12px;}
+table{padding:5px 20px;font:700 12px arial;}
+</style>
+<body>
+</div>
+
+<div class="inputform">
+<h2 class="design">Compose Mail Form</h2>
+<form action="./ComposeServletProcess" method="post">
+  <table>
+  <tr><td>To :</td><td><input type="text" name="receiver"></td></tr>
+  <tr><td>Subject :</td><td><input type="text" name="subject"></td></tr>
+  <tr><td>Message :</td><td><textarea name="message" rows="5" cols="25"></textarea> </td></tr>
+  <tr><td></td><td><input type="submit" value="Send Mail" id="submit"></td></tr>
+  </table>
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>tryoutmailer</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>test.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>test.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InboxServlet</servlet-name>
+    <servlet-class>test.InboxServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>InboxServlet</servlet-name>
+     <url-pattern>/InboxServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>test.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>ComposeServlet</servlet-name>
+   <servlet-class>test.ComposeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ComposeServlet</servlet-name>
+    <url-pattern>/ComposeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ComposeServletProcess</servlet-name>
+    <servlet-class>test.ComposeServletProcess</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ComposeServletProcess</servlet-name>
+    <url-pattern>/ComposeServletProcess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SentServlet</servlet-name>
+    <servlet-class>test.SentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SentServlet</servlet-name>
+    <url-pattern>/SentServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ViewMailServlet</servlet-name>
+    <servlet-class>test.ViewMailServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>ViewMailServlet</servlet-name>
+     <url-pattern>/ViewMailServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteMailServlet</servlet-name>
+    <servlet-class>test.DeleteMailServlet</servlet-class> 
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteMailServlet</servlet-name>
+    <url-pattern>/DeleteMailServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TrashServlet</servlet-name>
+    <servlet-class>test.TrashServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>TrashServlet</servlet-name>
+    <url-pattern>/TrashServlet</url-pattern>
+   </servlet-mapping>
+   
+   <session-config>
+     <session-timeout>1</session-timeout>
+   </session-config>
+  
+</web-app>
